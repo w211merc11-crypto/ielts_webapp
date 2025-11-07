@@ -1,17 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Telegram WebApp</title>
+  <title>IELTS WebApp</title>
+  <link rel="stylesheet" href="style.css">
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
 <body>
-  <h2 style="font-family:Arial;">Привет 👋 это мой Telegram Web App!</h2>
-  <button onclick="Telegram.WebApp.close()">Закрыть</button>
+  <div id="app">
+    <h1>IELTS Practice</h1>
 
-  <script>
-    const tg = window.Telegram.WebApp;
-    tg.expand();
-  </script>
+    <!-- Меню -->
+    <div id="menu">
+      <button onclick="startListening()">Listening</button>
+      <button onclick="startReading()">Reading</button>
+      <button onclick="startWriting()">Writing</button>
+      <button onclick="startSpeaking()">Speaking</button>
+    </div>
+
+    <!-- Блок с тестом -->
+    <div id="quiz" style="display:none;">
+      <div id="question"></div>
+      <div id="answers"></div>
+      <div id="timer">00:00</div>
+      <button id="nextBtn" onclick="nextQuestion()">Next</button>
+    </div>
+
+    <!-- Кнопка закрытия -->
+    <button onclick="Telegram.WebApp.close()" id="closeBtn">Закрыть WebApp</button>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
