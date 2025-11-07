@@ -1,1 +1,22 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+#menu button, #nextBtn, #closeBtn {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+}
+
+#timer {
+  font-size: 20px;
+  margin-top: 10px;
+}
 
