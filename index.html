@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My Telegram WebApp</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <h2 style="font-family:Arial;">Привет 👋 это мой Telegram Web App!</h2>
+  <button onclick="Telegram.WebApp.close()">Закрыть</button>
+
+  <script>
+    const tg = window.Telegram.WebApp;
+    tg.expand();
+  </script>
+</body>
+</html>
